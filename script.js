@@ -24,7 +24,7 @@ function displayCountry(data) {
     const flag = data.flags.png;
     div.innerHTML = `
 <div class="img">
-    <img src="${flag}"></img>
+    <img src="${flag}" class="img"></img>
 </div>
 <div class="country-info">
             <h5 class="countryName">${data.name.common}</h5>
@@ -34,3 +34,4 @@ function displayCountry(data) {
         </div>`;
         main.appendChild(div);
 }
+countries();
